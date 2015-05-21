@@ -30,6 +30,8 @@ exports['Should iterate cursor'] = {
 
           // Execute next
           cursor.next(function(err, d) {
+            console.log("-------------------------------------------------")
+
             test.equal(null, err);
             test.equal(1, d.a);
             test.equal(1, cursor.bufferedCount());
