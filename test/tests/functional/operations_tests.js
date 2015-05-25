@@ -107,6 +107,10 @@ exports['Should correctly execute find'] = {
 
             // Execute next
             cursor.next(function(err, d) {
+              console.log("--------------------------------------------")
+              console.dir(err)
+              console.dir(d)
+
               test.equal(null, err)
               test.equal(1, d.a);
 

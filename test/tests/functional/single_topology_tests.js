@@ -57,7 +57,7 @@ exports['Direct connection to RSPrimary via external IP'] = {
 exports['Connect to mongos'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 

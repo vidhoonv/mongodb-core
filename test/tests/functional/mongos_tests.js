@@ -6,7 +6,7 @@ var f = require('util').format
 exports['Should correctly connect using mongos object'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 
@@ -40,7 +40,7 @@ exports['Should correctly connect using mongos object'] = {
 exports['Should correctly execute command using mongos'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 
@@ -75,7 +75,7 @@ exports['Should correctly execute command using mongos'] = {
 exports['Should correctly execute write using mongos'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 
@@ -111,7 +111,7 @@ exports['Should correctly execute write using mongos'] = {
 exports['Should correctly remove mongos and re-add it'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 

@@ -16,7 +16,7 @@
 exports['Example of simple insert into db'] = {
   metadata: {
     requires: {
-      topology: "single"
+      topology: ["single", "replicaset", "sharded"]
     }
   },
 
@@ -67,7 +67,7 @@ exports['Example of simple insert into db'] = {
 exports['Example of update using Server instance'] = {
   metadata: {
     requires: {
-      topology: "single"
+      topology: ["single", "replicaset", "sharded"]
     }
   },
 
@@ -128,7 +128,7 @@ exports['Example of update using Server instance'] = {
 exports['Example of remove using Server instance'] = {
   metadata: {
     requires: {
-      topology: "single"
+      topology: ["single", "replicaset", "sharded"]
     }
   },
 
@@ -189,7 +189,7 @@ exports['Example of remove using Server instance'] = {
 exports['Example of cursor using Server instance'] = {
   metadata: {
     requires: {
-      topology: "single"
+      topology: ["single", "replicaset", "sharded"]
     }
   },
 
@@ -252,7 +252,7 @@ exports['Example of cursor using Server instance'] = {
 exports['Example of command using Server instance'] = {
   metadata: {
     requires: {
-      topology: "single"
+      topology: ["single", "replicaset", "sharded"]
     }
   },
 
@@ -614,7 +614,7 @@ exports['Example of command using ReplSet instance'] = {
 exports['Example of simple insert into db using Mongos'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 
@@ -662,7 +662,7 @@ exports['Example of simple insert into db using Mongos'] = {
 exports['Example of update using ReplSet instance'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 
@@ -720,7 +720,7 @@ exports['Example of update using ReplSet instance'] = {
 exports['Example of remove using Mongos instance'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 
@@ -778,7 +778,7 @@ exports['Example of remove using Mongos instance'] = {
 exports['Example of cursor using Mongos instance'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 
@@ -838,7 +838,7 @@ exports['Example of cursor using Mongos instance'] = {
 exports['Example of command using Mongos instance'] = {
   metadata: {
     requires: {
-      topology: "mongos"
+      topology: "sharded"
     }
   },
 

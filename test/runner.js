@@ -31,13 +31,13 @@ var startupOptions = {
   , skip: false
 }
 
-// // Skipping parameters
-// var startupOptions = {
-//     skipStartup: false
-//   , skipRestart: false
-//   , skipShutdown: false
-//   , skip: false
-// }
+// Skipping parameters
+var startupOptions = {
+    skipStartup: false
+  , skipRestart: false
+  , skipShutdown: false
+  , skip: false
+}
 
 /**
  * Standalone MongoDB Configuration
@@ -175,6 +175,7 @@ var runner = new Runner({
 });
 
 var testFiles =[
+  // Operational tests
     '/test/tests/functional/server_tests.js'
   , '/test/tests/functional/operations_tests.js'
   , '/test/tests/functional/basic_auth_tests.js'
@@ -183,13 +184,15 @@ var testFiles =[
   , '/test/tests/functional/extend_cursor_tests.js'
   , '/test/tests/functional/pool_tests.js'
   , '/test/tests/functional/connection_tests.js'
-  , '/test/tests/functional/rs_topology_tests.js'
-  , '/test/tests/functional/rs_topology_state_tests.js'
   , '/test/tests/functional/single_topology_tests.js'
   , '/test/tests/functional/cursor_tests.js'
   , '/test/tests/functional/error_tests.js'
   , '/test/tests/functional/tailable_cursor_tests.js'
   , '/test/tests/functional/operation_example_tests.js'
+
+  // Replicaset functions
+  , '/test/tests/functional/rs_topology_tests.js'
+  , '/test/tests/functional/rs_topology_state_tests.js'
   , '/test/tests/functional/replset_failover_tests.js'
 ]
 
@@ -308,6 +311,7 @@ if(argv.t == 'functional') {
           dbpath: path.join(path.resolve('db'))
         , logpath: path.join(path.resolve('db'))
         , tags: [{loc: "ny"}, {loc: "sf"}, {loc: "sf"}]
+        // , configs: 3
         , mongosStartPort: 50000
         , replsetStartPort: 31000
       })

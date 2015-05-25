@@ -552,11 +552,13 @@ exports['Primary becomes standalone'] = {
         // Attempt to connect
         var server = new ReplSet(config, options);
         server.on('fullsetup', function(_server) {
+
           server.on('joined', function(_type, _server) {
             joined[_type].push(_server);
 
             if(_type == 'primary') {
-              _server.destroy();
+              server.destroy();
+
               restartAndDone(configuration, test);
             }
           });

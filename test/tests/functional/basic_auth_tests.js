@@ -167,7 +167,7 @@ exports['Simple authentication test for replicaset'] = {
 exports['Simple authentication test for mongos'] = {
   metadata: {
     requires: {
-        topology: "mongos"
+        topology: "sharded"
       , mongodb: ">2.6.0 <=2.7.0"
     }
   },

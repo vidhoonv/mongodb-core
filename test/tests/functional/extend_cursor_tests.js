@@ -8,7 +8,7 @@ var inherits = require('util').inherits
 exports['Should correctly extend the cursor with custom implementation'] = {
   metadata: {
     requires: {
-      topology: "single"
+      topology: ["single", "replicaset", "sharded"]
     }
   },
 
