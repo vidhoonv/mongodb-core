@@ -77,15 +77,13 @@ describe('Mongos Single Proxy Connection (mocks)', function() {
               request.reply({ok: 1, n: doc.documents, lastOp: new Date()});
             }
           }
-        }).catch(function(err) {
-        });
+        }).catch(function() {});
 
         // Start dropping the packets
         setTimeout(function() {
           stopRespondingPrimary = true;
         }, 500);
-      }).catch(function(err) {
-      });
+      }).catch(function() {});
 
       // Attempt to connect
       var _server = new Mongos([
@@ -196,10 +194,8 @@ describe('Mongos Single Proxy Connection (mocks)', function() {
               });
             }
           }
-        }).catch(function(err) {
-        });
-      }).catch(function(err) {
-      });
+        }).catch(function() {});
+      }).catch(function() {});
 
       // Attempt to connect
       var _server = new Mongos([

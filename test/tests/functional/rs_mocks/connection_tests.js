@@ -64,9 +64,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -78,9 +76,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -92,10 +88,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -208,9 +202,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -222,9 +214,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -236,10 +226,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -343,9 +331,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -357,10 +343,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -463,10 +447,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -553,9 +535,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -567,10 +547,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -680,9 +658,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -694,9 +670,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -708,10 +682,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -825,9 +797,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -839,9 +809,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -853,10 +821,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -943,9 +909,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -957,10 +921,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -1067,9 +1029,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -1081,9 +1041,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -1095,10 +1053,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -1202,9 +1158,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -1216,10 +1170,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -1326,9 +1278,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(primary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -1340,9 +1290,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -1354,10 +1302,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -1452,9 +1398,7 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(firstSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -1466,10 +1410,8 @@ describe('ReplSet Connection Tests (mocks)', function() {
               request.reply(arbiter[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect

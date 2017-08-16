@@ -82,9 +82,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(primary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -96,9 +94,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(firstSecondary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -110,9 +106,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(secondSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Arbiter state machine
         co(function*() {
@@ -124,9 +118,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(arbiter[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
       });
 
       Connection.enableConnectionAccounting();
@@ -270,9 +262,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(primary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -284,9 +274,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(firstSecondary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -298,9 +286,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(secondSecondary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Arbiter state machine
         co(function*() {
@@ -312,9 +298,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(arbiter[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
       });
 
       Connection.enableConnectionAccounting();
@@ -478,9 +462,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(primary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -492,9 +474,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(firstSecondary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -506,9 +486,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(secondSecondary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Arbiter state machine
         co(function*() {
@@ -520,9 +498,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(arbiter[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
       });
 
       Connection.enableConnectionAccounting();
@@ -691,9 +667,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(primary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -705,9 +679,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(firstSecondary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -719,9 +691,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(secondSecondary[0]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Arbiter state machine
         co(function*() {
@@ -733,9 +703,7 @@ describe('ReplSet Add Remove (mocks)', function() {
               request.reply(arbiter[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
       });
 
       Connection.enableConnectionAccounting();

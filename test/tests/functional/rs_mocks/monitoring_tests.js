@@ -98,7 +98,7 @@ describe('ReplSet Monitoring (mocks)', function() {
               request.reply({ 'note': 'from execCommand', 'ok': 0, 'errmsg': 'not master' });
             }
           }
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -114,7 +114,7 @@ describe('ReplSet Monitoring (mocks)', function() {
               request.reply({ 'note': 'from execCommand', 'ok': 0, 'errmsg': 'not master' });
             }
           }
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -128,14 +128,14 @@ describe('ReplSet Monitoring (mocks)', function() {
               request.reply({ 'note': 'from execCommand', 'ok': 0, 'errmsg': 'not master' });
             }
           }
-        });
+        }).catch(function(err) {});
 
         // Start dropping the packets
         setTimeout(function() {
           stopRespondingPrimary = true;
           currentIsMasterState = 1;
         }, 5000);
-      });
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -274,7 +274,7 @@ describe('ReplSet Monitoring (mocks)', function() {
               request.reply(primary[currentIsMasterState]);
             }
           }
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -286,7 +286,7 @@ describe('ReplSet Monitoring (mocks)', function() {
               request.reply(firstSecondary[currentIsMasterState]);
             }
           }
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -298,8 +298,8 @@ describe('ReplSet Monitoring (mocks)', function() {
               request.reply(secondSecondary[currentIsMasterState]);
             }
           }
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       // Attempt to connect
       var server = new ReplSet([

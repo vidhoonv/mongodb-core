@@ -89,9 +89,7 @@ describe('ReplSet Failover (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -107,9 +105,7 @@ describe('ReplSet Failover (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -125,10 +121,8 @@ describe('ReplSet Failover (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -289,9 +283,7 @@ describe('ReplSet Failover (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -307,9 +299,7 @@ describe('ReplSet Failover (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -325,10 +315,8 @@ describe('ReplSet Failover (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect

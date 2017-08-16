@@ -79,9 +79,7 @@ describe('ReplSet Maintenance Mode (mocks)', function() {
               request.reply(primary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -93,9 +91,7 @@ describe('ReplSet Maintenance Mode (mocks)', function() {
               request.reply(firstSecondary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -107,9 +103,7 @@ describe('ReplSet Maintenance Mode (mocks)', function() {
               request.reply(secondSecondary[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Arbiter state machine
         co(function*() {
@@ -121,10 +115,8 @@ describe('ReplSet Maintenance Mode (mocks)', function() {
               request.reply(arbiter[currentIsMasterIndex]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect

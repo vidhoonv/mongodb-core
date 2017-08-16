@@ -45,8 +45,8 @@ describe('Single Compression (mocks)', function() {
             request.reply(serverResponse);
             running = false;
           }
-        });
-      }).catch(done);
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       // Attempt to connect
       var client = new Server({
@@ -123,8 +123,8 @@ describe('Single Compression (mocks)', function() {
             }
             currentStep++;
           }
-        });
-      }).catch(done);
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       // Attempt to connect
       var client = new Server({
@@ -227,8 +227,8 @@ describe('Single Compression (mocks)', function() {
             }
             currentStep++;
           }
-        });
-      }).catch(done);
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       // Attempt to connect
       var client = new Server({
@@ -331,8 +331,8 @@ describe('Single Compression (mocks)', function() {
             }
             currentStep++;
           }
-        });
-      }).catch(done);
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       // Attempt to connect
       var client = new Server({
@@ -431,8 +431,8 @@ describe('Single Compression (mocks)', function() {
             }
             currentStep++;
           }
-        });
-      }).catch(done);
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       // Attempt to connect
       var client = new Server({

@@ -61,8 +61,7 @@ describe('Mongos Proxy Failover (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date()});
             }
           }
-        }).catch(function(err) {
-        });
+        }).catch(function() {});
 
         // Mongos
         co(function*() {
@@ -77,10 +76,8 @@ describe('Mongos Proxy Failover (mocks)', function() {
               request.reply({ok: 1, n: doc.documents, lastOp: new Date()});
             }
           }
-        }).catch(function(err) {
-        });
-      }).catch(function(err) {
-      });
+        }).catch(function() {});
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([
@@ -171,8 +168,7 @@ describe('Mongos Proxy Failover (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        }).catch(function(err) {
-        });
+        }).catch(function() {});
 
         // Mongos
         co(function*() {
@@ -187,10 +183,8 @@ describe('Mongos Proxy Failover (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        }).catch(function(err) {
-        });
-      }).catch(function(err) {
-      });
+        }).catch(function() {});
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([
@@ -302,8 +296,7 @@ describe('Mongos Proxy Failover (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        }).catch(function(err) {
-        });
+        }).catch(function() {});
 
         // Mongos
         co(function*() {
@@ -321,10 +314,8 @@ describe('Mongos Proxy Failover (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        }).catch(function(err) {
-        });
-      }).catch(function(err) {
-      });
+        }).catch(function() {});
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([

@@ -67,8 +67,7 @@ describe('Mongos Proxy Read Preference (mocks)', function() {
             }
           }
         });
-      }).catch(function(err) {
-      });
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([
@@ -171,8 +170,7 @@ describe('Mongos Proxy Read Preference (mocks)', function() {
             }
           }
         });
-      }).catch(function(err) {
-      });
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([
@@ -267,8 +265,7 @@ describe('Mongos Proxy Read Preference (mocks)', function() {
             }
           }
         });
-      }).catch(function(err) {
-      });
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([

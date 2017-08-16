@@ -75,9 +75,7 @@ describe('ReplSet SDAM Monitoring (mocks)', function() {
               request.reply(primary[step]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function() {});
 
         // First secondary state machine
         co(function*() {
@@ -89,9 +87,7 @@ describe('ReplSet SDAM Monitoring (mocks)', function() {
               request.reply(firstSecondary[step]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function() {});
 
         // Second secondary state machine
         co(function*() {
@@ -103,10 +99,8 @@ describe('ReplSet SDAM Monitoring (mocks)', function() {
               request.reply(arbiter[step]);
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function() {});
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new ReplSet([
@@ -189,15 +183,15 @@ describe('ReplSet SDAM Monitoring (mocks)', function() {
 
                 for (var i = 0; i < expectedResults.length; i++) {
                   // console.log('================= expectedResults :: ' + i)
-                  try {
-                    expect(expectedResults[i]).to.eql(responses.topologyDescriptionChanged[i]);
-                  } catch (e) {
-                    console.log('----------------------------- expected ');
-                    console.log(JSON.stringify(expectedResults[i], null, 2));
-                    console.log('----------------------------- got ');
-                    console.log(JSON.stringify(responses.topologyDescriptionChanged[i], null, 2));
-                    process.exit(0);
-                  }
+                  // try {
+                  expect(expectedResults[i]).to.eql(responses.topologyDescriptionChanged[i]);
+                  // } catch (e) {
+                  //   console.log('----------------------------- expected ');
+                  //   console.log(JSON.stringify(expectedResults[i], null, 2));
+                  //   console.log('----------------------------- got ');
+                  //   console.log(JSON.stringify(responses.topologyDescriptionChanged[i], null, 2));
+                  //   process.exit(0);
+                  // }
                 }
 
                 running = false;

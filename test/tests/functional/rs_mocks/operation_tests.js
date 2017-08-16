@@ -53,10 +53,8 @@ describe('ReplSet Operations (mocks)', function() {
               request.reply({ ok: 1, n: 1 });
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect
@@ -134,10 +132,8 @@ describe('ReplSet Operations (mocks)', function() {
               request.reply({ ok: 1, n: 1 });
             }
           }
-        }).catch(function(err) {
-          console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect

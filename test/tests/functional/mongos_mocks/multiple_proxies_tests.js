@@ -60,8 +60,7 @@ describe('Mongos Multiple Proxies (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        }).catch(function(err) {
-        });
+        }).catch(function() {});
 
         // Mongos
         co(function*() {
@@ -76,8 +75,7 @@ describe('Mongos Multiple Proxies (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        }).catch(function(err) {
-        });
+        }).catch(function() {});
 
         // Attempt to connect
         var server = new Mongos([
@@ -119,8 +117,7 @@ describe('Mongos Multiple Proxies (mocks)', function() {
 
         server.on('error', done);
         server.connect();
-      }).catch(function(err) {
-      });
+      }).catch(function() {});
     }
   });
 
@@ -173,7 +170,7 @@ describe('Mongos Multiple Proxies (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        });
+        }).catch(function() {});
 
         // Mongos
         co(function*() {
@@ -189,8 +186,8 @@ describe('Mongos Multiple Proxies (mocks)', function() {
               request.reply({ ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        });
-      });
+        }).catch(function() {});
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([

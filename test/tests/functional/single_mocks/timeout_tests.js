@@ -73,13 +73,13 @@ describe('Single Timeout (mocks)', function() {
               request.reply({ok: 1, n: doc.documents, lastOp: new Date()});
             }
           }
-        });
+        }).catch(function(err) {});
 
         // Start dropping the packets
         setTimeout(function() {
           stopRespondingPrimary = true;
         }, 5000);
-      });
+      }).catch(function(err) {});
 
       // Attempt to connect
       var replset = new Server({
@@ -192,8 +192,8 @@ describe('Single Timeout (mocks)', function() {
               request.reply(serverIsMaster[0]);
             }
           }
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       // Attempt to connect
       server = new Server({

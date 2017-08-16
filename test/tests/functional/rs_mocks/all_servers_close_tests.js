@@ -71,9 +71,7 @@ describe('ReplSet All Servers Close (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -89,9 +87,7 @@ describe('ReplSet All Servers Close (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -107,9 +103,7 @@ describe('ReplSet All Servers Close (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         Connection.enableConnectionAccounting();
         // Attempt to connect
@@ -161,7 +155,7 @@ describe('ReplSet All Servers Close (mocks)', function() {
         setTimeout(function() {
           server.connect();
         }, 100);
-      });
+      }).catch(function(err) {});
     }
   });
 
@@ -228,9 +222,7 @@ describe('ReplSet All Servers Close (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // First secondary state machine
         co(function*() {
@@ -246,9 +238,7 @@ describe('ReplSet All Servers Close (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
+        }).catch(function(err) {});
 
         // Second secondary state machine
         co(function*() {
@@ -264,10 +254,8 @@ describe('ReplSet All Servers Close (mocks)', function() {
               }
             }
           }
-        }).catch(function(err) {
-          // console.log(err.stack);
-        });
-      });
+        }).catch(function(err) {});
+      }).catch(function(err) {});
 
       Connection.enableConnectionAccounting();
       // Attempt to connect

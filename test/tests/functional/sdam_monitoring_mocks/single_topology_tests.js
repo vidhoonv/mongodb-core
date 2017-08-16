@@ -52,7 +52,7 @@ describe('Single SDAM Monitoring (mocks)', function() {
             }
           }
         }).catch(function() {});
-      });
+      }).catch(function() {});
 
       // Attempt to connect
       server = new Server({
@@ -199,7 +199,7 @@ describe('Single SDAM Monitoring (mocks)', function() {
             }
           }
         }).catch(function() {});
-      });
+      }).catch(function() {});
 
       // Attempt to connect
       server = new Server({

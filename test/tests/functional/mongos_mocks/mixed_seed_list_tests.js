@@ -65,8 +65,7 @@ describe('Mongos Mixed Seed List (mocks)', function() {
               request.reply({ok: 1, n: doc.documents, lastOp: new Date()});
             }
           }
-        }).catch(function(err) {
-        });
+        }).catch(function() {});
 
         // Mongos
         co(function*() {
@@ -81,8 +80,7 @@ describe('Mongos Mixed Seed List (mocks)', function() {
               request.reply({ok: 1, n: doc.documents, lastOp: new Date()});
             }
           }
-        }).catch(function(err) {
-        });
+        }).catch(function() {});
 
         // Attempt to connect
         var server = new Mongos([
@@ -116,7 +114,7 @@ describe('Mongos Mixed Seed List (mocks)', function() {
 
         server.on('error', done);
         setTimeout(function() { server.connect(); }, 100);
-      });
+      }).catch(function() {});
     }
   });
 

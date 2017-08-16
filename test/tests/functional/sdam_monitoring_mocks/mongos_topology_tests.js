@@ -80,7 +80,7 @@ describe.skip('Mongos SDAM Monitoring (mocks)', function() {
             }
           }
         }).catch(function() {});
-      });
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([
@@ -288,7 +288,7 @@ describe.skip('Mongos SDAM Monitoring (mocks)', function() {
               return;
             }
           }
-        });
+        }).catch(function() {});
 
         // Mongos
         co(function*() {
@@ -303,8 +303,8 @@ describe.skip('Mongos SDAM Monitoring (mocks)', function() {
               request.reply({ok: 1, n: doc.documents, lastOp: new Date() });
             }
           }
-        });
-      });
+        }).catch(function() {});
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([
@@ -502,7 +502,7 @@ describe.skip('Mongos SDAM Monitoring (mocks)', function() {
               request.connection.destroy();
             }
           }
-        });
+        }).catch(function() {});
 
         // Mongos
         co(function*() {
@@ -515,7 +515,7 @@ describe.skip('Mongos SDAM Monitoring (mocks)', function() {
               request.reply(serverIsMaster[0]);
             }
           }
-        });
+        }).catch(function() {});
 
         // Start dropping the packets
         setTimeout(function() {
@@ -533,7 +533,7 @@ describe.skip('Mongos SDAM Monitoring (mocks)', function() {
             }, 2000);
           }, 2000);
         }, 2000);
-      });
+      }).catch(function() {});
 
       // Attempt to connect
       var server = new Mongos([
